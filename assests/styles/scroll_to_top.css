@@ -1,0 +1,82 @@
+.to-top
+{
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active
+{
+  z-index: 99999;
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 320px) {
+  .to-top {
+    font-size: 23px;
+    width: 38px;
+    height: 38px;
+    right: 18px;
+  }
+
+  .to-top.active {
+    bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .to-top {
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    right: 19px;
+  }
+
+  .to-top.active {
+    bottom: 19px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 426px) {
+  .to-top {
+    font-size: 27px;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+  }
+
+  .to-top.active {
+    bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 427px) and (max-width: 768px) {
+  .to-top {
+    font-size: 30px;
+    width: 43px;
+    height: 43px;
+    right: 20px;
+  }
+
+  .to-top.active {
+    bottom: 20px;
+  }
+}
